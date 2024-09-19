@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="utils.Listeners"/>
+    </listeners>
+    <parameter name="browser" value="Firefox"/>
+    <test name="the-internetWebsite-firefox">
+        <classes>
+            <class name="alerts.AlertTest"/>
+            <class name="context.menu.ContextMenuTest"/>
+            <class name="forgot.password.ForgotPasswordTest"/>
+            <class name="frames.EditorFrameTest"/>
+            <class name="frames.NestedFramesTest"/>
+            <class name="hover.HoverTest"/>
+            <class name="javascript.InfiniteJavaScriptScrollTest"/>
+            <class name="javascript.JavaScriptScrollTest"/>
+            <class name="keys.HorizontalSliderTest"/>
+            <class name="keys.KeyPressTest"/>
+            <class name="login.LoginTest"/>
+            <class name="shiftingcontent.MenuElementTest"/>
+            <class name="uploadfile.UploadFileTest"/>
+            <class name="waits.WaitTest"/>
+        </classes>
+    </test>
+</suite>
